@@ -1,0 +1,457 @@
+.social-icon {
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+.menu-title {
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  background-color: #252525;
+  border: 3px solid white;
+  border-radius: 40%;
+  padding: 5px;
+}
+
+.menu-title:hover {
+  color: white;
+  border: 3px solid #000000;
+  background-color: #f76d37;
+  
+}
+
+
+/* .menu-title::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: 0.5s;
+} */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: inline;
+  border: none !important;
+}
+
+.col span, .menu-item span, .gallery_section_2 span {
+  display: inline-block;
+  padding: 12px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  font-size: 19px;
+  cursor: pointer;
+  z-index: 1;
+
+}
+
+.tab-content span,
+.gallery_section_2 span {
+  color: black;
+  border: 3px solid black;
+}
+
+.gallery_section_2 img{
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 10%;
+}
+
+/*
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color:red;
+    font-size: 15px;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: inline;
+}
+*/
+
+.card-price {
+  display: inline-block;
+  width: auto;
+  height: 38px;
+  background-color: #f76d37;
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
+  border-left: 1px solid #f76d37;
+  /* This makes room for the triangle */
+  margin-left: 19px;
+  position: relative;
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.card-price:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -19px;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 19px solid #f76d37;
+}
+
+/* Makes the circle */
+.card-price:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 17px;
+}
+
+.pin {
+  text-align: center;
+  text-decoration: solid;
+}
+
+.orange {
+  color: #ff7a01;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #252525;
+  padding: 30px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.form-container-1{
+  border: 3px solid #f76d37;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #f76d37;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #f76d37;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #f76d37;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  padding: 10px;
+  color: #f76d37;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border: 3px solid #f76d37;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: #f76d37;
+  border: 3px solid white;
+  color: white;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
+}
+
+.just {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 40px;
+  color: #013747;
+  font-weight: bold;
+}
+.qr-image{
+  text-align: center;
+}
+
+.qr-image img{
+  height: 300px;
+  width: 300px;
+}
+
+.momo_name {
+  color: mediumslateblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.btn-1 {
+  background: black;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
+.btn-1:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+}
+
+
+.tab-titles-class {
+  font-size: 18px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tab-titles-class h1 {
+  color: #f76d37;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+
+
+
+.tab-titles {
+  display: flex;
+ padding-bottom: 20px;
+ 
+}
+
+
+
+.tab-content img {
+  height: 300px;
+  width: 400px;
+  border: 3px solid black;
+  border-radius: 10%;
+  box-shadow: 20px 0px 50px rgba(7, 7, 7, 0.4);
+}
+
+
+.map-responsive iframe {
+  border: 3px solid #f76d37;
+  width: 100%;
+}
+
+
+/* From Uiverse.io by Codecite */ 
+.btn {
+  --fancy-button-gradient-0: #8d49fd;
+  --fancy-button-gradient-50: #7f56f3;
+  --fancy-button-gradient-100: #5691f3;
+  --fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
+  --fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
+  --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
+  --fancy-button-shine-top: #e9d1ff;
+  --fancy-button-shine-bottom: #adfff9;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 25px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-gradient-0) 0%,
+    var(--fancy-button-gradient-50) 50%,
+    var(--fancy-button-gradient-100) 100%
+  );
+  box-shadow:
+    0px 4px 12px rgba(9, 12, 60, 0.15),
+    0px 2px 8px rgba(9, 12, 60, 0.15),
+    0px 1px 3px var(--fancy-button-inner-shadow-top-lg),
+    inset 0px 1px 1px var(--fancy-button-inner-shadow-top),
+    inset 0px -1px 3px var(--fancy-button-inner-shadow-bottom);
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  will-change: transform;
+}
+
+.btn:before {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--fancy-button-shine-top);
+  width: 96px;
+  height: 6px;
+  top: -3px;
+  opacity: 0.6;
+  filter: blur(6px);
+  transition: opacity 0.25s;
+}
+
+.btn:after {
+  inset: 0;
+  background-size: cover;
+  z-index: 2;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+  border-radius: inherit;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-shine-top),
+    transparent 8px
+  );
+  background-position: 0 -6px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.btn span:before,
+.btn span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: var(--fancy-button-shine-bottom);
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+  will-change: transform;
+}
+
+.btn span:before {
+  width: 92px;
+  height: 8px;
+  bottom: -4px;
+  opacity: 0.75;
+  filter: blur(6px);
+}
+
+.btn span:after {
+  width: 112px;
+  height: 1px;
+  bottom: 0;
+  opacity: 0.9;
+  filter: blur(1px);
+}
+
+.btn:hover span:before {
+  opacity: 0.8;
+}
+
+.btn:hover span:before {
+  transform: translateX(-50%) scale(1.25);
+}
+
+.btn:hover span:after {
+  opacity: 1;
+}
